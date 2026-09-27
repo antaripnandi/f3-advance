@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "f3advanced",
+  "version": "${version}",
+  "name": "F3 Advanced",
+  "description": "A cleaner, organized, color-coded F3 debug HUD with per-line toggles.",
+  "authors": [
+    "antarip",
+    "F3 Advanced contributors"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.f3advanced.client.F3AdvancedClient"
+    ],
+    "modmenu": [
+      "com.f3advanced.client.F3AdvancedModMenu"
+    ]
+  },
+  "mixins": [
+    "f3advanced.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "${minecraft_version}",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*",
+    "cloth-config": "*"
+  }
+}

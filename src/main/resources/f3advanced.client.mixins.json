@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.f3advanced.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "DebugScreenOverlayMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

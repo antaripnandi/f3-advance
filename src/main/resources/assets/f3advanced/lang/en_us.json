@@ -1,0 +1,10 @@
+{
+  "category.f3advanced": "F3 Advanced",
+  "key.f3advanced.open_config": "Open F3 Advanced config",
+  "key.f3advanced.toggle_position": "Toggle F3 Advanced Position",
+  "key.f3advanced.toggle_world": "Toggle F3 Advanced World",
+  "key.f3advanced.toggle_performance": "Toggle F3 Advanced Performance",
+  "key.f3advanced.toggle_player_status": "Toggle F3 Advanced Player Status",
+  "key.f3advanced.toggle_target": "Toggle F3 Advanced Target",
+  "key.f3advanced.toggle_system": "Toggle F3 Advanced System"
+}
