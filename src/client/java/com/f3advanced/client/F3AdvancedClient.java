@@ -34,6 +34,7 @@ public final class F3AdvancedClient implements ClientModInitializer {
     public void onInitializeClient() {
         F3AdvancedConfig.load();
         registerKeys();
+        com.f3advanced.client.command.F3AdvancedCommands.register();
         ClientTickEvents.END_CLIENT_TICK.register(F3AdvancedClient::onClientTick);
 //? if <26.1 {
         net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback.EVENT.register((graphics, tick) -> {

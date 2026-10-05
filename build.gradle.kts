@@ -10,7 +10,7 @@ val modId = "f3advanced"
 val mcVersion = sc.current.version
 
 group = "com.f3advanced"
-version = "0.1.0+mc$mcVersion"
+version = "0.1.1+mc$mcVersion"
 
 repositories {
     maven("https://maven.fabricmc.net/")

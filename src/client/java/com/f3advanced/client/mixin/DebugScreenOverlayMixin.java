@@ -24,6 +24,10 @@ public abstract class DebugScreenOverlayMixin {
     private void f3advanced$replaceDebugOverlay(GuiGraphicsExtractor graphics, CallbackInfo ci) {
 */
 //?}
+        DebugScreenOverlay overlay = (DebugScreenOverlay)(Object)this;
+        if (!overlay.showDebugScreen()) {
+            return;
+        }
         F3AdvancedHud.renderedByMixin = true;
         F3AdvancedHud.render(Minecraft.getInstance(), graphics);
         ci.cancel();
