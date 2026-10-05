@@ -85,6 +85,17 @@ public final class F3AdvancedClient implements ClientModInitializer {
         toggleSystem = register("toggle_system", InputConstants.UNKNOWN.getValue());
     }
 
+//? if >=1.21.11 {
+/*  private static net.minecraft.client.KeyMapping.Category category;
+    private static net.minecraft.client.KeyMapping.Category getCategory() {
+        if (category == null) {
+            category = net.minecraft.client.KeyMapping.Category.register(net.minecraft.resources.Identifier.fromNamespaceAndPath("f3advanced", "f3advanced"));
+        }
+        return category;
+    }
+*/
+//?}
+
     private static KeyMapping register(String name, int key) {
 //? if <1.21.11 {
         KeyMapping mapping = new KeyMapping(
@@ -97,13 +108,13 @@ public final class F3AdvancedClient implements ClientModInitializer {
                 "key.f3advanced." + name,
                 InputConstants.Type.KEYSYM,
                 key,
-                net.minecraft.client.KeyMapping.Category.register(net.minecraft.resources.Identifier.fromNamespaceAndPath("f3advanced", "f3advanced")));
+                getCategory());
 */
 //?} else {
 /*      KeyMapping mapping = new KeyMapping(
                 "key.f3advanced." + name,
                 key,
-                net.minecraft.client.KeyMapping.Category.register(net.minecraft.resources.Identifier.fromNamespaceAndPath("f3advanced", "f3advanced")));
+                getCategory());
 */
 //?}
 //? if <26.1 {
